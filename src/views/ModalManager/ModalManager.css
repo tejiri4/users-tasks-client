@@ -1,0 +1,32 @@
+.modal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #00000075;
+    display: flex;
+}
+
+.modal__content {
+    background: #fff;
+    width: fit-content;
+    margin: auto;
+    border-radius: 7px;
+}
+
+.modal__content > div {
+    position: relative;
+}
+
+.modal__close {
+    position: absolute;
+    right: -5%;
+    top: -40px;
+    cursor: pointer;
+}
+
+.modal__close img {
+    width: 20px;
+    height: 20px;
+}

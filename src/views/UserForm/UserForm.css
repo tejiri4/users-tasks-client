@@ -1,0 +1,23 @@
+.user-form {
+    padding: 60px;
+}
+
+.user-form h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.user-form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-form button {
+    margin-top: 30px;
+}

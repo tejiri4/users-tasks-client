@@ -1,0 +1,18 @@
+.delete-warning {
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delete-warning h1 {
+    margin: 0px;
+    font-size: 17px;
+}
+
+.delete-warning p {
+    color: #0000009c;
+    max-width: 220px;
+    text-align: center;
+    padding: 20px 0;
+}

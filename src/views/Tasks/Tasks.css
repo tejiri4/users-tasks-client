@@ -1,0 +1,30 @@
+.tasks__header {
+  margin-bottom: 50px;
+}
+
+.tasks__header h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+}
+
+.tasks__tasks {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 2rem;
+}
+
+.tasks__flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (min-width: 600px) {
+  .tasks__tasks { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .tasks__tasks { grid-template-columns: repeat(3, 1fr); }
+}
