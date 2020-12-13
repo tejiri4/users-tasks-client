@@ -4,7 +4,7 @@ import { openModal, fetchTask } from '../../store/actions'
 
 import './Task.css'
 
-const Task = ({ id, description, state, createdAt, user_id }) => {
+const Task = ({ id, description, state, createdAt }) => {
 		const { store, dispatch } = useStoreContext()
 		
 	const handleEditTask = () => {
@@ -32,9 +32,11 @@ const Task = ({ id, description, state, createdAt, user_id }) => {
 				</div>
 			</div>
 			<div className="task__actions">
-			  <div onClick={handleEditTask}>
-					<img src="https://res.cloudinary.com/store-manager/image/upload/v1607776601/edit.svg" alt="edit"/>
-				</div>
+			  {state !== 'done' && (
+					<div onClick={handleEditTask}>
+						<img src="https://res.cloudinary.com/store-manager/image/upload/v1607776601/edit.svg" alt="edit"/>
+					</div>
+				)}
 				<div onClick={handleDeleteTask}>
 					<img src="https://res.cloudinary.com/store-manager/image/upload/v1607776683/delete_1_1.svg" alt="delete"/>
 				</div>

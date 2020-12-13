@@ -14,7 +14,6 @@ const TaskForm = ({ title, buttonName, isEdit, data }) => {
 		
 		const handleClick = () => {
 			setIsButtonDisabled(true)
-			
 		 if(isEdit) {
 			editTask({ description: task.description, state: task.state }, data.id, data.user_id).then(data => {
 				dispatch(setTasks(data))
