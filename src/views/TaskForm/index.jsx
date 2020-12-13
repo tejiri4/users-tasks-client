@@ -15,6 +15,9 @@ const TaskForm = ({ title, buttonName, isEdit, data }) => {
 		const handleClick = () => {
 			setIsButtonDisabled(true)
 		 if(isEdit) {
+			 if(task.state == 'todo') {
+				 delete task.state
+			 }
 			editTask({ description: task.description, state: task.state }, data.id, data.user_id).then(data => {
 				dispatch(setTasks(data))
 				dispatch(closeModal())

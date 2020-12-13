@@ -41,6 +41,10 @@
     line-height: 18px;
 }
 
+.task p:nth-child(2) {
+    text-align: end;
+}
+
 .task .todo, .task .done {
     height: fit-content;
     border-radius: 5px;

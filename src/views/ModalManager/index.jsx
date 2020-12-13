@@ -39,9 +39,9 @@ const Modal = () => {
 			case 'edit-task':
 				return <TaskForm title="Edit Task" buttonName="SUBMIT" isEdit data={store.modalConfig.data}  />;
 			case 'delete-user':
-					return <DeleteWarning title="Delete User" text={`Are you sure you want to delete ${store.modalConfig.data.name}`} handleClick={handleUserDelete} />;
+					return <DeleteWarning title="Delete User" text={`Are you sure you want to delete ${store.modalConfig.data.name}?`} handleClick={handleUserDelete} />;
 			case 'delete-task':
-					return <DeleteWarning title="Delete Task" text={`Are you sure you want to delete task with id ${store.modalConfig.data.id}`} handleClick={handleTaskDelete} />;
+					return <DeleteWarning title="Delete Task" text={`Are you sure you want to delete task with id ${store.modalConfig.data.id}?`} handleClick={handleTaskDelete} />;
 			default:
 				break;
 		}
